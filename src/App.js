@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
   Link
@@ -15,7 +14,6 @@ import Contact from './routes/contact';
 
 export default function App() {
   return (
-    <Router>
       <div>
         <nav>
           <ul>
@@ -44,6 +42,5 @@ export default function App() {
         </Routes>
 
       </div>
-    </Router>
   );
 }
