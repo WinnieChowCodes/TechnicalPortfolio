@@ -1,6 +1,6 @@
 import '../App.css';
 
-function Home() {
+function Projects() {
   return (
     <div className="App">
       <header className="App-header">
@@ -12,4 +12,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Projects;
