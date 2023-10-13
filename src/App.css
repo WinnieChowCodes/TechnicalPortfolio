@@ -24,7 +24,6 @@
 }
 .About-Me {
   background-color: #3d424d;
-  min-height: 100vh;
   font-size: calc(7px + 2vmin);
   color: white;
   padding-top: 1.5vh;
