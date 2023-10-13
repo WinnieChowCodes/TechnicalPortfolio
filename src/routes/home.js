@@ -21,7 +21,7 @@ function Home() {
         <p>Currently, I spend my days working on my portfolio and building my resume.</p>
 
         <p>When I'm not at my computer, I enjoy passing the time by illustrating, learning a new craft,
-          teaching myself a new recipe or spending time with my lovely partner :>
+          teaching myself a new recipe or spending time with my lovely partner :)
         </p>
       </div>
       <p>personal links (Github, DevPost,Linked In)</p>

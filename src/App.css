@@ -30,6 +30,11 @@
   padding-top: 1.5vh;
 }
 
+.bodyContent {
+  background-color: #3d424d;
+  color: white;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -43,6 +48,6 @@
   }
 }
 
-p, nav {
+p, nav, li, h1, h2 {
   font-family: monospace;
 }

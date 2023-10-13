@@ -1,0 +1,37 @@
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skillContainer {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 95%; background-color: #808080;} /* Green */
+.css {width: 90%; background-color: #808080;} /* Blue */
+.js {width: 80%; background-color: #808080;} /* Red */
+.react {width: 80%; background-color: #808080;} /* Dark Grey */
+.java {width: 75%; background-color: #808080;} /* Dark Grey */
+.sql {width: 60%; background-color: #808080;} /* Dark Grey */
+.github {width: 70%; background-color: #808080;} /* Dark Grey */
+.aws {width: 50%; background-color: #808080;} /* Dark Grey */
+
+#skillStats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    #skillStats {
+      flex-direction: column;
+    }
+  }
