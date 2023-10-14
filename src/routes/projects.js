@@ -1,11 +1,12 @@
 import '../App.css';
+import projectsJSON from '../utils/projectsJSON';
 
 function Projects() {
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          Hello World! This is the Projects page :)
+          {projectsJSON[0].projectTitle}
         </p>
       </header>
     </div>
