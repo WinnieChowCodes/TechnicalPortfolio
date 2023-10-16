@@ -10,6 +10,7 @@ import Home from './routes/home';
 import Skills from './routes/skills';
 import Projects from './routes/projects';
 import Contact from './routes/contact';
+import SingleProject from './routes/singleProject';
 
 //react-bootstrap imports
 import 'bootstrap/dist/css/bootstrap.css';
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/singleProject" element={<SingleProject />} />
       </Routes></>
   );
 }
