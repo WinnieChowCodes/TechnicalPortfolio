@@ -1,32 +1,40 @@
 import '../App.css';
-import { Form } from 'react-bootstrap';
+import { Button, Form, Alert } from 'react-bootstrap';
+import { SiDevpost, SiGithub, SiLinkedin } from 'react-icons/si';
 function Contact() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Hello World! This is the Contact :)
-        </p>
-        <ul>
-          <li>Offer Email and Phone number</li>
-          <li>Social Media Links</li>
-          <li>Contact Form (email, Name, Message)</li>
-        </ul>
+        <h1>Feel free to get in touch!</h1>
+        <p>Email: WinnieChow606@outlook.com</p>
+        <p>Phone number: XXXX XXXX X805</p>
+
+        <div>
+          <SiGithub size={100}/>{" "}
+          <SiLinkedin size={100}/>{" "}
+          <SiDevpost size={100}/>{" "}
+        </div>
+
       </header>
       <div>
+        <h2>Send me a message!</h2>
+        <Alert variant="danger">
+          Whoops! Seems like this form is not available! Try again later
+        </Alert>
         <Form>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email</Form.Label>
-            <Form.Control type='email'/>
+            <Form.Control type='email' />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Name</Form.Label>
-            <Form.Control/>
+            <Form.Control />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
             <Form.Control as="textarea" rows={3} />
           </Form.Group>
+          <Button variant="secondary">Send</Button>
         </Form>
       </div>
     </div>
