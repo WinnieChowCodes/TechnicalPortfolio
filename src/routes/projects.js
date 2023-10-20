@@ -1,19 +1,13 @@
-import { Badge, Card, Col, Row, Stack } from 'react-bootstrap';
+import { Badge, Card, Col, Row, Stack, Button } from 'react-bootstrap';
 import '../App.css';
 import projectsJSON from '../utils/projectsJSON';
+import { redirect, Link } from 'react-router-dom';
 
 function getProject(projectID){
   localStorage.setItem('pID',projectID);
 }
 
 function Projects() {
-
-  //const textForStorage = 'Hello World.'
-  // setter
-  //localStorage.setItem('my-key', textForStorage);
-  // getter
-  //const textFromStorage = localStorage.getItem('my-key');
-
   const projectsCardList = projectsJSON.map(project =>
     <Col>
       <Card bg='dark' text='white'>
@@ -36,6 +30,7 @@ function Projects() {
       <header className="App-header" style={{ padding: 10 }}>
         <Row xs={1} md={3}>{projectsCardList}</Row>
       </header>
+      <Button><Link to="/hobbies" style={{color:"white"}}>Interested in my other projects? Take a look here</Link></Button>
     </div>
   );
 }

@@ -11,6 +11,7 @@ import Skills from './routes/skills';
 import Projects from './routes/projects';
 import Contact from './routes/contact';
 import SingleProject from './routes/singleProject';
+import Hobbies from './routes/hobbies';
 
 //react-bootstrap imports
 import 'bootstrap/dist/css/bootstrap.css';
@@ -21,7 +22,7 @@ import Navbar from 'react-bootstrap/Navbar';
 export default function App() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark" sticky='top'>
+      <Navbar bg="dark" data-bs-theme="dark" sticky='top' xs="1">
         <Container>
           <Navbar.Brand href="#">Winnie Chow</Navbar.Brand>
           <Nav className="me-auto">
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/hobbies" element={<Hobbies />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/singleProject" element={<SingleProject />} />
       </Routes></>
