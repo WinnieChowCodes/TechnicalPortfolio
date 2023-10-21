@@ -21,7 +21,7 @@ function Contact() {
         <Alert variant="danger">
           Whoops! Seems like this form is not available! Try again later
         </Alert>
-        <Form>
+        <Form style={{textAlign:"left", paddingLeft:"25%", paddingRight:"25%"}}>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email</Form.Label>
             <Form.Control type='email' />

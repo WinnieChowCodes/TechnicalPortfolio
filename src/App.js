@@ -21,24 +21,33 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function App() {
   return (
-    <>
-      <Navbar bg="dark" data-bs-theme="dark" sticky='top' xs="1">
-        <Container>
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body>
+        <Navbar collapseOnSelect expand="sm" bg="dark" data-bs-theme="dark" sticky='top'>
           <Navbar.Brand href="#">Winnie Chow</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact Me</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/hobbies" element={<Hobbies />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/singleProject" element={<SingleProject />} />
-      </Routes></>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Container>
+              <Nav className="me-auto">
+                <Nav.Link href="#skills">Skills</Nav.Link>
+                <Nav.Link href="#projects">Projects</Nav.Link>
+                <Nav.Link href="#contact">Contact Me</Nav.Link>
+              </Nav>
+            </Container>
+          </Navbar.Collapse>
+        </Navbar>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/hobbies" element={<Hobbies />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/singleProject" element={<SingleProject />} />
+        </Routes>
+      </body>
+    </html>
   );
 }

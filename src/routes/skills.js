@@ -8,52 +8,13 @@ import { FaArrowsSplitUpAndLeft } from "react-icons/fa6";
 function Skills() {
   return (
     <body>
-      <header className="App-header">
-        <h1>My Top 3 Skills</h1>
-        <CardGroup>
-          <Card
-            bg='dark'
-            text='white'
-            border='light'
-            style={{ width: '18rem' }}>
-            <IoLogoGithub size='large' />
-            <Card.Img variant="top" />
-            <Card.Body>
-              <Card.Title>#1 GitHub</Card.Title>
-            </Card.Body>
-          </Card>
-
-          <Card
-            bg='dark'
-            text='white'
-            border='light'
-            style={{ width: '18rem' }}>
-            <IoPeopleCircleSharp size='large' />
-            <Card.Body>
-              <Card.Title>#2 Agile</Card.Title>
-            </Card.Body>
-          </Card>
-
-          <Card
-            bg='dark'
-            text='white'
-            border='light'
-            style={{ width: '18rem' }}>
-            <IoLogoReact size='large' />
-            <Card.Body>
-              <Card.Title>#3 React</Card.Title>
-            </Card.Body>
-          </Card>
-        </CardGroup>
-      </header>
-
       <div>
         <h1>Take a look at my stats!</h1>
         <p>Equipped skills (Displayed in a character stat format)</p>
 
         <div id='skillStats'>
-          <div><Image src='https://medibangpaint.com/en/wp-content/uploads/2020/08/IMG_4534-768x768.jpg' /></div>
-          <div style={{ width: '50%', paddingRight: 10 }}>
+          <div><Image src='https://medibangpaint.com/en/wp-content/uploads/2020/08/IMG_4534-768x768.jpg' style={{width:"100%", height:"auto"}} /></div>
+          <div id="skillsContainer" style={{ width: '50%', paddingRight: 10 }}>
             <p>HTML</p>
             <div class="skillContainer">
               <div class="skills html">95%</div>
@@ -95,6 +56,45 @@ function Skills() {
             </div>
           </div>
         </div>
+
+        <header className="App-header">
+        <h1>My Top 3 Skills</h1>
+        <CardGroup>
+          <Card
+            bg='dark'
+            text='white'
+            border='light'
+            style={{ width: '18rem' }}>
+            <IoLogoGithub size='large' />
+            <Card.Img variant="top" />
+            <Card.Body>
+              <Card.Title>#1 GitHub</Card.Title>
+            </Card.Body>
+          </Card>
+
+          <Card
+            bg='dark'
+            text='white'
+            border='light'
+            style={{ width: '18rem' }}>
+            <IoPeopleCircleSharp size='large' />
+            <Card.Body>
+              <Card.Title>#2 Agile</Card.Title>
+            </Card.Body>
+          </Card>
+
+          <Card
+            bg='dark'
+            text='white'
+            border='light'
+            style={{ width: '18rem' }}>
+            <IoLogoReact size='large' />
+            <Card.Body>
+              <Card.Title>#3 React</Card.Title>
+            </Card.Body>
+          </Card>
+        </CardGroup>
+      </header>
 
         <p>Additional Skills</p>
 

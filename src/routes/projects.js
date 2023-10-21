@@ -29,8 +29,8 @@ function Projects() {
     <div className="App">
       <header className="App-header" style={{ padding: 10 }}>
         <Row xs={1} md={3}>{projectsCardList}</Row>
+          <Link to="/hobbies" className='buttonLink'>Interested in my other projects? Take a look here</Link>
       </header>
-      <Button><Link to="/hobbies" style={{color:"white"}}>Interested in my other projects? Take a look here</Link></Button>
     </div>
   );
 }

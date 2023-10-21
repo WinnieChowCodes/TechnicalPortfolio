@@ -50,3 +50,23 @@
 p, nav, li, h1, h2 {
   font-family: monospace;
 }
+
+.buttonLink {
+  font: bold;
+  text-decoration: none;
+  background-color: #2134ff;
+  color: #ffffff;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #2134ff;
+  border-right: 1px solid #2134ff;
+  border-bottom: 1px solid #2134ff;
+  border-left: 1px solid #2134ff;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 500px) {
+  #skillsContainer {
+    width: 100%;
+    padding-right: 0%;
+  }
+}
