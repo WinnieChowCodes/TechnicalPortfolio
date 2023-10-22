@@ -6,7 +6,6 @@
 - projectDescLong: The project description; the longer version
 - projectMedia: An array of relevant media (pictures/videos) related to the project
 - projectDate: The date when the project occured
-- projectLinks: A JSON Array containing all relevant project links (GitHub, Website)
 */
 
 let projectsJSON = [
