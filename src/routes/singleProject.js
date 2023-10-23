@@ -5,6 +5,9 @@ import { Carousel, Image } from 'react-bootstrap';
 import { BiDice1, BiDice2, BiDice3, BiDice4 } from 'react-icons/bi';
 import { AiOutlineTrophy } from "react-icons/ai";
 
+//Projects imports
+import WhatsApp from '../utils/project_content/WhatsApp';
+
 function SingleProject() {
   const projectID = localStorage.getItem("pID");
 
@@ -15,6 +18,7 @@ function SingleProject() {
           {projectsJSON[projectID].projectTitle}
         </h1>
         <p>{projectsJSON[projectID].projectDescShort}</p>
+        {projectsJSON[projectID].projectDescLong}
         <Link>View Github</Link>
         <Link>View Website</Link>
       </header>

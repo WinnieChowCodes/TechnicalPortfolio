@@ -8,12 +8,14 @@
 - projectDate: The date when the project occured
 */
 
+import WhatsApp from "./project_content/WhatsApp";
+
 let projectsJSON = [
-    {projectID : 0, projectTitle: "WhatsThat App", projectDescShort: "A clone of the popular app WhatsApp I made during my final year of Uni.", projectSkills: ["React Native"]},
-    {projectID : 1, projectTitle: "Pokédex", projectDescShort: "A simple pokémon inspired website displaying pokémon data utilising the pokéAPI.", projectSkills: ["React", "HTML","CSS", "JS"]},
-    {projectID : 2, projectTitle: "Films API", projectDescShort: "A simple API displaying Film data in XML, JSON and String format.", projectSkills: ["Java Servlets"]},
-    {projectID : 3, projectTitle: "SQL Detective", projectDescShort: "A Simple web game designed to teach SQL using gamification principles", projectSkills: ["HTML", "CSS", "JavaScript", "GitHub Pages"]},
-    {projectID : 4, projectTitle: "Online Dictionary", projectDescShort: "A quick and simple dictionary Website made for the GreatUniHack in 2022", projectSkills: ["Velvo Wix"]}
+    {projectID : 0, projectTitle: "WhatsThat App", projectDescShort: "A clone of the popular app WhatsApp I made during my final year of Uni.", projectSkills: ["React Native"], projectDescLong: <WhatsApp/>},
+    {projectID : 1, projectTitle: "Pokédex", projectDescShort: "A simple pokémon inspired website displaying pokémon data utilising the pokéAPI.", projectSkills: ["React", "HTML","CSS", "JS"],projectDescLong: "..."},
+    {projectID : 2, projectTitle: "Films API", projectDescShort: "A simple API displaying Film data in XML, JSON and String format.", projectSkills: ["Java Servlets"],projectDescLong: "nnn"},
+    {projectID : 3, projectTitle: "SQL Detective", projectDescShort: "A Simple web game designed to teach SQL using gamification principles", projectSkills: ["HTML", "CSS", "JavaScript", "GitHub Pages"], projectDescLong: "What"},
+    {projectID : 4, projectTitle: "Online Dictionary", projectDescShort: "A quick and simple dictionary Website made for the GreatUniHack in 2022", projectSkills: ["Velvo Wix"],projectDescLong: "App"}
 ]
 
 export default projectsJSON;
