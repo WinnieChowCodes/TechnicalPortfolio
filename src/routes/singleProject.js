@@ -1,12 +1,5 @@
-import { Link } from 'react-router-dom';
 import '../App.css';
 import projectsJSON from '../utils/projectsJSON';
-import { Carousel, Image } from 'react-bootstrap';
-import { BiDice1, BiDice2, BiDice3, BiDice4 } from 'react-icons/bi';
-import { AiOutlineTrophy } from "react-icons/ai";
-
-//Projects imports
-import WhatsApp from '../utils/project_content/WhatsApp';
 
 function SingleProject() {
   const projectID = localStorage.getItem("pID");
@@ -18,66 +11,8 @@ function SingleProject() {
           {projectsJSON[projectID].projectTitle}
         </h1>
         <p>{projectsJSON[projectID].projectDescShort}</p>
-        {projectsJSON[projectID].projectDescLong}
-        <Link>View Github</Link>
-        <Link>View Website</Link>
       </header>
-      <Carousel>
-        <Carousel.Item>
-          <Image src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-
-      <div style={{display:"flex", justifyContent:'space-evenly', margin:"5px"}}>
-        <div style={{ border: "5px solid", borderRadius: "20px", }}>
-          <h2>Skills Equipped</h2>
-          <BiDice1 size={100} />
-          <BiDice2 size={100} />
-          <BiDice3 size={100} />
-          <BiDice4 size={100} />
-        </div>
-
-        <div style={{ border: "5px solid", borderRadius: "20px",width:"55%" }}>
-          <h2>Goals</h2>
-          <ul style={{ textDecoration: "none" }}>
-            <li><AiOutlineTrophy /> item 1</li>
-            <li><AiOutlineTrophy /> item 2</li>
-            <li><AiOutlineTrophy /> item 3</li>
-          </ul>
-        </div>
-      </div>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Porttitor massa id neque aliquam. Quis vel eros donec ac. Ut
-        diam quam nulla porttitor massa id neque aliquam. Augue ut lectus arcu bibendum at varius vel pharetra.
-        Mauris augue neque gravida in fermentum et sollicitudin. Nibh ipsum consequat nisl vel pretium lectus
-        uam. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Nisl pretium fusce id
-        velit ut tortor pretium. Convallis aenean et tortor at risus viverra adipiscing at. Ac orci phasellus
-        egestas tellus rutrum tellus pellentesque eu tincidunt. Vitae elementum curabitur vitae nunc sed.
-        Vulputate dignissim suspendisse in est ante in nibh. Integer malesuada nunc vel risus commodo. Congue
-        eu consequat ac felis donec et. Volutpat lacus laoreet non curabitur. Arcu non sodales neque sodales ut
-        etiam sit amet. Velit egestas dui id ornare arcu odio ut.</p>
+      {projectsJSON[projectID].projectDescLong}
     </div>
   );
 }

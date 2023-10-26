@@ -1,43 +1,52 @@
 import React from "react";
 import { Carousel, Image } from "react-bootstrap";
-import Chats from './Chats.png';
+import { IoLogoGithub, IoLogoReact } from "react-icons/io5";
+import { AiOutlineTrophy } from "react-icons/ai";
+import { SiPostman } from "react-icons/si";
 
-class WhatsApp extends React.Component{
-render(){
-    return(
-        <div>
+class WhatsApp extends React.Component {
+    render() {
+        return (
             <div>
-                <p>This is the WhatsApp Project page</p>
-                <a href="https://github.com/WinnieChowCodes/WhatsThatApp">Github Repo</a>
+                <div style={{ backgroundColor: "#282c34" }}>
+                    <p style={{color:"White"}}>Check out the Github Repo:</p>
+                    <a href="https://github.com/WinnieChowCodes/WhatsThatApp"><IoLogoGithub style={{ color: "White" }} size={100}/></a>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img src={process.env.PUBLIC_URL + "/Chats.png"} alt="WhatsThat App Chats" />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image src={process.env.PUBLIC_URL + "/Users.png"} />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image src={process.env.PUBLIC_URL + "/Profile.png"} />
+                        </Carousel.Item>
+                    </Carousel>
+                    <br />
+                </div>
+
+                <div style={{ display: "flex", justifyContent: 'space-evenly', margin: "5px" }}>
+                    <div style={{ border: "5px solid", borderRadius: "20px", }}>
+                        <h2>Skills Equipped</h2>
+                        <IoLogoReact size={100} />
+                        <SiPostman size={100} />
+                    </div>
+
+                    <div style={{ border: "5px solid", borderRadius: "20px", width: "55%" }}>
+                        <h2>Goals</h2>
+                        <ul style={{ listStyleType: "None" }}>
+                            <li><AiOutlineTrophy /> Create an frontend mobile application using a Restful API.</li>
+                            <li><AiOutlineTrophy /> Create a Drafts feature that allows users of the program to save drafts of their messages</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                    </p>
+                </div>
             </div>
-            <Carousel>
-        <Carousel.Item>
-          <img src={Chats} alt="WhatsThat App Chats" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-        </div>
-    )
-}
+        )
+    }
 }
 
 export default WhatsApp;
