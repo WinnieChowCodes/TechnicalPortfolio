@@ -14,7 +14,7 @@ function Home() {
           <Button variant='primary'><b>Contact Me</b></Button>
         </header>
         <div className='About-Me' style={{display:"flex"}}>
-          <Image src='https://as1.ftcdn.net/v2/jpg/03/39/45/96/1000_F_339459697_XAFacNQmwnvJRqe1Fe9VOptPWMUxlZP8.jpg' width={"25%"} height={"25%"} />
+          <Image src={process.env.PUBLIC_URL + "/ProfilePic.jpg"} width={"25%"} height={"25%"} />
           <div id="description">
             <p>Ever since I was a child, I have had an insatiable curiosity about how things work.
               I have always enjoyed creating things and I enjoy writing code and building applications;
